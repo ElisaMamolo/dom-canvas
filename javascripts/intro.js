@@ -75,3 +75,41 @@ ctx.stroke();
 
 // close the path
 ctx.closePath();
+
+
+
+/*
+// ****************************
+// fill()
+// ****************************
+When you call fill(), any open shapes are closed automatically, so you don’t have to call closePath().
+This is not the case when you call stroke().
+
+ctx.beginPath();
+ctx.moveTo(75, 50);
+ctx.lineTo(100, 75);
+ctx.lineTo(100, 25);
+ctx.fill();
+*/
+
+
+
+/*ARCS
+
+arc(x, y, radius, startAngle, endAngle, anticlockwise);
+// Draws an arc which is centered at (x, y) position with
+// radius starting at startAngle and ending at endAngle going
+// in the given direction indicated by anticlockwise (defaulting to clockwise).
+arcTo(x1, y1, x2, y2, radius);
+// Draws an arc with the given control points and radius,
+// connected to the previous point by a straight line.
+
+*/
+
+ctx.beginPath();
+// Math.PI * 2 = 360 = full circle
+ctx.arc(150, 170, 75, 0, Math.PI * 2);
+ctx.lineWidth = 20;
+ctx.strokeStyle = "green";
+ctx.stroke();
+ctx.endPath();
