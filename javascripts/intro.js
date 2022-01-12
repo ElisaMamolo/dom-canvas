@@ -113,3 +113,4 @@ ctx.lineWidth = 20;
 ctx.strokeStyle = "green";
 ctx.stroke();
 ctx.endPath();
+
