@@ -1,0 +1,16 @@
+/*we will focus on 2D rendering context
+but there are other context options for canvas tags, actually there are 4 possible values: 
+-2D. Leading to the creation of a CanvasRenderingContext2D object representing a two-dimensional rendering context.
+-webgl. (or “experimental-webgl”) which will create a WebGLRenderingContext object representing a three-dimensional rendering context. This context is only available on browsers that implement WebGL version 1 (OpenGL ES 2.0).
+-webgl2 which will create a WebGL2RenderingContext object representing a three-dimensional rendering context. This context is only available on browsers that implement WebGL version 2 (OpenGL ES 3.0).
+bitmaprenderer which will create an ImageBitmapRenderingContext which only provides functionality to replace the content of the canvas with a given ImageBitmap.
+*/
+
+
+
+canvas {
+    border: 1px solid red;
+  }
+  
+
+  
